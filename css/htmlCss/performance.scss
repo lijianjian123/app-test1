@@ -1,0 +1,37 @@
+$color: #409eff;
+.performance {
+  padding: 0 20px;
+  .icon {
+    width: 50px;
+    height: 50px;
+    img {
+      width:100%;
+    }
+  }
+  .info {
+    line-height: 24px;
+    margin-left: 20px;
+    .data {
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+  .swiper-box {
+    padding-top:20px;
+  }
+  .swiper-slide {
+    width: 220px;
+    color: $color;
+    text-align: center;
+    img{
+      width: 100%;
+    }
+  }
+  .swiper-slide:not(.swiper-slide-active) {
+    transform: scale(0.8);
+  }
+  .per-data {
+    border: 1px solid #999;
+    margin-top:10px;
+  }
+}

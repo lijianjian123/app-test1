@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>问题列表页</title>
+  <!-- 引入样式 -->
+  <link rel="stylesheet" href="../node_modules/element-ui/lib/theme-chalk/index.css">
+  <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/flex.css">
+  <link rel="stylesheet" href="../css/htmlCss/question.css">
+  <link rel="stylesheet" href="../css/htmlCss/performance.css">
+  <link rel="stylesheet" href="../node_modules/swiper/dist/css/swiper.css">
+</head>
+
+<body>
+  <div id="app" class="question">
+    <el-row>
+      <el-col :span="2">
+        <div class="left-padding"></div>
+      </el-col>
+      <el-col :span="20">
+        <el-container style="height:100%">
+          <el-header class='header' height="100px">
+
+            <div class="infos">
+              <el-row>
+                <el-col :span="8" class='border'>
+                  <div class="app">
+                    <div id='appIcon' class="app-img left">
+                      <img src="../assets/app.png" />
+                    </div>
+                    <div class="app-info left">
+                      <ul>
+                        <li>
+                          <span>应用名称</span>
+                          <span>xxxxx</span>
+                        </li>
+                        <li>
+                          <span>版本号</span>
+                          <span>xxxxx</span>
+                        </li>
+                        <li>
+                          <span>平台</span>
+                          <span>xxxxx</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </el-col>
+                <el-col :span="8" class='border'>
+                  <div class="device">
+                    <div class="device-img left">
+                      <img src="../assets/phone.png" />
+                    </div>
+                    <div class="device-info left">
+                      <ul>
+                        <li>
+                          <span>品牌</span>
+                          <span>xxxxx</span>
+                        </li>
+                        <li>
+                          <span>型号</span>
+                          <span>xxxxx</span>
+                        </li>
+                        <li>
+                          <span>系统版本</span>
+                          <span>xxxxx</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </el-col>
+                <el-col :span="4" class='border'>
+                  <div class="que-num">
+                    <div>异常操作数</div>
+                    <div class="big-num num">
+                      3
+                    </div>
+                  </div>
+                </el-col>
+                <el-col :span="4" class='border'>
+                  <div class="que-process">
+                    <div>问题流程</div>
+                    <div class="num">
+                      <span class="big-num">3</span>
+                      <span>/20</span>
+                    </div>
+                  </div>
+                </el-col>
+              </el-row>
+            </div>
+          </el-header>
+          <el-main>
+            <el-container style="height:100%">
+              <el-header height="30px">
+                <div class="content-header">
+                  <span id='goQues'>问题截图</span>
+                  <span class='active'>性能数据</span>
+                  <span class='download-log right'>日志下载</span>
+                </div>
+              </el-header>
+              <el-main>
+
+                <el-container class="performance" style="height:100%">
+                  <el-header height='370px'>
+                    <div class="test-flex-x-between">
+                      <div>
+                        <div class="left">
+                          <div class="icon">
+                            <img src="../assets/memory.png">
+                          </div>
+                        </div>
+                        <div class="right">
+                          <div class="info">
+                            <div>平均内存占用</div>
+                            <div class="data">23121MB</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="left">
+                          <div class="icon">
+                            <img src="../assets/cpu.png">
+                          </div>
+                        </div>
+                        <div class="right">
+                          <div class="info">
+                            <div>平均内存占用</div>
+                            <div class="data">23121MB</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="left">
+                          <div class="icon">
+                            <img src="../assets/up.png">
+                          </div>
+                        </div>
+                        <div class="right">
+                          <div class="info">
+                            <div>平均内存占用</div>
+                            <div class="data">23121MB</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="left">
+                          <div class="icon">
+                            <img src="../assets/down.png">
+                          </div>
+                        </div>
+                        <div class="right">
+                          <div class="info">
+                            <div>平均内存占用</div>
+                            <div class="data">23121MB</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-container swiper-box">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src='../assets/question.jpeg' />
+                          <div>2-3问题</div>
+                        </div>
+                        <div class="swiper-slide">
+                          <img src='../assets/question.jpeg' />
+                          <div>2-3问题</div>
+                        </div>
+                        <div class="swiper-slide">
+                          <img src='../assets/question.jpeg' />
+                          <div>2-3问题</div>
+                        </div>
+                        <div class="swiper-slide">
+                          <img src='../assets/question.jpeg' />
+                          <div>2-3问题</div>
+                        </div>
+                        <div class="swiper-slide">
+                          <img src='../assets/question.jpeg' />
+                          <div>2-3问题</div>
+                        </div>
+                        <div class="swiper-slide">
+                          <img src='../assets/question.jpeg' />
+                          <div>2-3问题</div>
+                        </div>
+                        <div class="swiper-slide">
+                          <img src='../assets/question.jpeg' />
+                          <div>2-3问题</div>
+                        </div>
+                        <div class="swiper-slide">
+                          <img src='../assets/question.jpeg' />
+                          <div>2-3问题</div>
+                        </div>
+                        <div class="swiper-slide">
+                          <img src='../assets/question.jpeg' />
+                          <div>2-3问题</div>
+                        </div>
+                        <div class="swiper-slide">
+                          <img src='../assets/question.jpeg' />
+                          <div>2-3问题</div>
+                        </div>
+                      </div>
+                    </div>
+                  </el-header>
+                  <el-main class='per-data'>
+                    <div>
+                      性能数据
+                    </div>
+                  </el-main>
+                </el-container>
+              </el-main>
+            </el-container>
+          </el-main>
+        </el-container>
+      </el-col>
+      <el-col :span="2">
+        <div class="right-padding"></div>
+      </el-col>
+    </el-row>
+  </div>
+</body>
+
+</html>
+<!-- 引入组件库 -->
+<script src="../node_modules/vue/dist/vue.min.js"></script>
+<script src="../node_modules/element-ui/lib/index.js"></script>
+
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../node_modules/swiper/dist/js/swiper.min.js"></script>
+<script>
+  new Vue({
+    el: '#app',
+    data: function () {
+      return { visible: false }
+    }
+  })
+  var swiper = new Swiper(".swiper-container", {
+    slidesPerView: 'auto',
+    normalizeSlideIndex: false,
+    spaceBetween: 5,
+    centeredSlides: true,
+    // centerInsufficientSlides: true,
+    grabCursor: true,
+    mousewheel: true,
+    // slideToClickedSlide: true,
+    // watchSlidesProgress : true,
+    preventClicksPropagation: true,
+    initialSlide: Math.floor(10 / 2), // 10是图片的数量
+    on: {
+      click: function () {
+        console.log(arguments, 'arguments')
+      }
+    }
+  })
+
+  $("#goQues").click(function () {
+    location.href = 'questions.html'
+  });
+</script>

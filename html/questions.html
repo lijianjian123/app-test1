@@ -94,7 +94,7 @@
               <el-header height="30px">
                 <div class="content-header">
                   <span class='active'>问题截图</span>
-                  <span>性能数据</span>
+                  <span id='goPer'>性能数据</span>
                   <span class='download-log right'>日志下载</span>
                 </div>
               </el-header>
@@ -224,7 +224,9 @@
     }
   })
 
-
+  $("#goPer").click(function () {
+    location.href = 'performance.html'
+  });
 
 
 </script>
