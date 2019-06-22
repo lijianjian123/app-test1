@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "element-ui": "^2.9.2",
+    "jquery": "^3.4.1",
+    "normalize.css": "^8.0.1",
+    "sass": "^1.21.0",
+    "vue": "^2.6.10"
+  }
+}

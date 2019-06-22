@@ -1,0 +1,122 @@
+$color: #409eff;
+.question {
+  font-size: 14px;
+  height: 100%;
+  .header {
+    padding-top:20px;
+  }
+  .el-row {
+    height: 100%;
+  }
+  .el-col {
+    height: 100%;
+  }
+  .left-padding,
+  .right-padding {
+    height: 100%;
+  }
+  .content-header {
+    font-size: 16px;
+    span {
+      display: inline-block;
+      line-height: 20px;
+      cursor: pointer;
+      &:nth-child(1) {
+        border-right: 1px solid $color;
+        padding-left: 20px;
+        padding-right: 10px;
+      }
+      &:nth-child(2) {
+        padding-left: 10px;
+      }
+      &.active {
+        color: $color;
+        font-weight: 500;
+      }
+    }
+  }
+  .type-box {
+    width:152px;
+    height:30px;
+    border:1px solid $color;
+    border-radius: 5px;
+    color:$color;
+    overflow: hidden;
+    div {
+      float:left;
+      height:30px;
+      width:50px;
+      text-align: center;
+      line-height:30px;
+      &:nth-child(1),&:nth-child(2){
+        border-right:1px solid $color;
+      }
+    }
+    div:active{
+      background:$color;
+      color:#fff;
+    }
+  }
+}
+.infos {
+  .border {
+    height:80px;
+    border-right: 1px solid #ccc;
+  }
+  .app-img,
+  .device-img {
+    padding-right: 20px;
+  }
+  .app,
+  .device {
+    width:210px;
+    margin-left:40px;
+    li {
+      line-height: 24px;
+      span:nth-child(1) {
+        display: inline-block;
+        text-align: right;
+        width: 70px;
+        padding-right: 10px;
+      }
+    }
+  }
+  .app {
+    .app-img {
+      img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+  .que-num,
+  .que-process {
+    width:100px;
+    margin:0 auto;
+    text-align: center;
+    .big-num {
+      font-size: 40px;
+      font-weight: 600;
+    }
+    .num {
+      padding-top:15px;
+    }
+  }
+}
+
+.img-box {
+  flex-wrap:wrap;
+  li {
+    margin: 0 10px 20px 0;
+    width:200px;
+    img {
+      width:100%;
+      cursor: pointer;
+    }
+    .que-name {
+      line-height:30px;
+      color:$color;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,146 @@
+.question {
+  font-size: 14px;
+  height: 100%;
+}
+
+.question .header {
+  padding-top: 20px;
+}
+
+.question .el-row {
+  height: 100%;
+}
+
+.question .el-col {
+  height: 100%;
+}
+
+.question .left-padding,
+.question .right-padding {
+  height: 100%;
+}
+
+.question .content-header {
+  font-size: 16px;
+}
+
+.question .content-header span {
+  display: inline-block;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.question .content-header span:nth-child(1) {
+  border-right: 1px solid #409eff;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.question .content-header span:nth-child(2) {
+  padding-left: 10px;
+}
+
+.question .content-header span.active {
+  color: #409eff;
+  font-weight: 500;
+}
+
+.question .type-box {
+  width: 152px;
+  height: 30px;
+  border: 1px solid #409eff;
+  border-radius: 5px;
+  color: #409eff;
+  overflow: hidden;
+}
+
+.question .type-box div {
+  float: left;
+  height: 30px;
+  width: 50px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.question .type-box div:nth-child(1), .question .type-box div:nth-child(2) {
+  border-right: 1px solid #409eff;
+}
+
+.question .type-box div:active {
+  background: #409eff;
+  color: #fff;
+}
+
+.infos .border {
+  height: 80px;
+  border-right: 1px solid #ccc;
+}
+
+.infos .app-img,
+.infos .device-img {
+  padding-right: 20px;
+}
+
+.infos .app,
+.infos .device {
+  width: 210px;
+  margin-left: 40px;
+}
+
+.infos .app li,
+.infos .device li {
+  line-height: 24px;
+}
+
+.infos .app li span:nth-child(1),
+.infos .device li span:nth-child(1) {
+  display: inline-block;
+  text-align: right;
+  width: 70px;
+  padding-right: 10px;
+}
+
+.infos .app .app-img img {
+  width: 60px;
+  height: 60px;
+}
+
+.infos .que-num,
+.infos .que-process {
+  width: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.infos .que-num .big-num,
+.infos .que-process .big-num {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.infos .que-num .num,
+.infos .que-process .num {
+  padding-top: 15px;
+}
+
+.img-box {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.img-box li {
+  margin: 0 10px 20px 0;
+  width: 200px;
+}
+
+.img-box li img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.img-box li .que-name {
+  line-height: 30px;
+  color: #409eff;
+  cursor: pointer;
+}
+/*# sourceMappingURL=question.css.map */
