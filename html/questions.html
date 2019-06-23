@@ -120,7 +120,7 @@
                         <div @click='getBigImg' id='img'>
                           <el-image src="../assets/question.jpeg" lazy></el-image>
                         </div>
-                        <div class='que-name'>
+                        <div id='queName' class='que-name'>
                           2-3问题
                         </div>
                       </li>
@@ -250,6 +250,8 @@
   $("#goPer").click(function () {
     location.href = 'performance.html'
   });
-
+  $("#queName").click(function () {
+    location.href = 'detail.html'
+  });
 
 </script>
