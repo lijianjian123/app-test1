@@ -1,0 +1,32 @@
+.cont {
+  overflow: hidden;
+  img {
+    width: 300px;
+  }
+  .que-data {
+    padding: 40px 0 0 20px;
+    .que-type {
+      overflow: hidden;
+    }
+    .icon {
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    .info {
+      line-height: 20px;
+      font-weight: 600;
+      padding-left:10px;
+    }
+    .per-data {
+      padding-top:20px;
+      div {
+        overflow: hidden;
+      }
+      .data-item {
+        padding: 10px 10px;
+      }
+    }
+  }
+}

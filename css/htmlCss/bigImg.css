@@ -1,0 +1,39 @@
+.cont {
+  overflow: hidden;
+}
+
+.cont img {
+  width: 300px;
+}
+
+.cont .que-data {
+  padding: 40px 0 0 20px;
+}
+
+.cont .que-data .que-type {
+  overflow: hidden;
+}
+
+.cont .que-data .icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.cont .que-data .info {
+  line-height: 20px;
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+.cont .que-data .per-data {
+  padding-top: 20px;
+}
+
+.cont .que-data .per-data div {
+  overflow: hidden;
+}
+
+.cont .que-data .per-data .data-item {
+  padding: 10px 10px;
+}
+/*# sourceMappingURL=bigImg.css.map */

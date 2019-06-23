@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/flex.css">
   <link rel="stylesheet" href="../css/htmlCss/question.css">
+  <link rel="stylesheet" href="../css/htmlCss/bigImg.css">
 </head>
 
 <body>
@@ -116,79 +117,7 @@
                   <el-main>
                     <ul class='test-flex-x-start img-box'>
                       <li>
-                        <div>
-                          <el-image src="../assets/question.jpeg" lazy></el-image>
-                        </div>
-                        <div class='que-name'>
-                          2-3问题
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                          <el-image src="../assets/question.jpeg" lazy></el-image>
-                        </div>
-                        <div class='que-name'>
-                          2-3问题
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                          <el-image src="../assets/question.jpeg" lazy></el-image>
-                        </div>
-                        <div class='que-name'>
-                          2-3问题
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                          <el-image src="../assets/question.jpeg" lazy></el-image>
-                        </div>
-                        <div class='que-name'>
-                          2-3问题
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                          <el-image src="../assets/question.jpeg" lazy></el-image>
-                        </div>
-                        <div class='que-name'>
-                          2-3问题
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                          <el-image src="../assets/question.jpeg" lazy></el-image>
-                        </div>
-                        <div class='que-name'>
-                          2-3问题
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                          <el-image src="../assets/question.jpeg" lazy></el-image>
-                        </div>
-                        <div class='que-name'>
-                          2-3问题
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                          <el-image src="../assets/question.jpeg" lazy></el-image>
-                        </div>
-                        <div class='que-name'>
-                          2-3问题
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                          <el-image src="../assets/question.jpeg" lazy></el-image>
-                        </div>
-                        <div class='que-name'>
-                          2-3问题
-                        </div>
-                      </li>
-                      <li>
-                        <div>
+                        <div @click='getBigImg' id='img'>
                           <el-image src="../assets/question.jpeg" lazy></el-image>
                         </div>
                         <div class='que-name'>
@@ -207,6 +136,90 @@
         <div class="right-padding"></div>
       </el-col>
     </el-row>
+    <el-dialog
+      title="查看大图"
+      :visible.sync="showDialog"
+      width="700px"
+      :before-close="handleClose"
+    >
+      <div class="cont">
+        <div class="left">
+          <img src="../assets/question.jpeg" alt="" />
+        </div>
+        <div class="left que-data">
+          <div class="que-type">
+            <div class="left">
+              <div class="icon">
+                <img src="../assets/problem.png" alt="" />
+              </div>
+            </div>
+            <div class="left">
+              <div class="info">
+                2-3问题
+              </div>
+            </div>
+          </div>
+          <div class="per-data">
+            <div>
+              <div class="data-item left">
+                <div class="left">
+                  <div class="icon">
+                    <img src="../assets/memory.png" />
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="info">
+                    <div>平均内存占用</div>
+                    <div class="data">23121MB</div>
+                  </div>
+                </div>
+              </div>
+              <div class="data-item left">
+                <div class="left">
+                  <div class="icon">
+                    <img src="../assets/cpu.png" />
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="info">
+                    <div>平均内存占用</div>
+                    <div class="data">23121MB</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="data-item left">
+                <div class="left">
+                  <div class="icon">
+                    <img src="../assets/up.png" />
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="info">
+                    <div>平均内存占用</div>
+                    <div class="data">23121MB</div>
+                  </div>
+                </div>
+              </div>
+              <div class="data-item left">
+                <div class="left">
+                  <div class="icon">
+                    <img src="../assets/down.png" />
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="info">
+                    <div>平均内存占用</div>
+                    <div class="data">23121MB</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </el-dialog>
   </div>
 </body>
 
@@ -220,7 +233,17 @@
   new Vue({
     el: '#app',
     data: function () {
-      return { visible: false }
+      return { 
+        showDialog: false
+      }
+    },
+    methods:{
+      getBigImg(){
+        this.showDialog = true
+      },
+      handleClose(){
+        this.showDialog = false
+      }
     }
   })
 

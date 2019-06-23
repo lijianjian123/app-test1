@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="../css/htmlCss/question.css">
   <link rel="stylesheet" href="../css/htmlCss/performance.css">
   <link rel="stylesheet" href="../node_modules/swiper/dist/css/swiper.css">
+  <link rel="stylesheet" href="../css/htmlCss/bigImg.css">
 </head>
 
 <body>
@@ -218,6 +219,90 @@
         <div class="right-padding"></div>
       </el-col>
     </el-row>
+    <el-dialog
+      title="查看大图"
+      :visible.sync="showDialog"
+      width="700px"
+      :before-close="handleClose"
+    >
+      <div class="cont">
+        <div class="left">
+          <img src="../assets/question.jpeg" alt="" />
+        </div>
+        <div class="left que-data">
+          <div class="que-type">
+            <div class="left">
+              <div class="icon">
+                <img src="../assets/problem.png" alt="" />
+              </div>
+            </div>
+            <div class="left">
+              <div class="info">
+                2-3问题
+              </div>
+            </div>
+          </div>
+          <div class="per-data">
+            <div>
+              <div class="data-item left">
+                <div class="left">
+                  <div class="icon">
+                    <img src="../assets/memory.png" />
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="info">
+                    <div>平均内存占用</div>
+                    <div class="data">23121MB</div>
+                  </div>
+                </div>
+              </div>
+              <div class="data-item left">
+                <div class="left">
+                  <div class="icon">
+                    <img src="../assets/cpu.png" />
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="info">
+                    <div>平均内存占用</div>
+                    <div class="data">23121MB</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="data-item left">
+                <div class="left">
+                  <div class="icon">
+                    <img src="../assets/up.png" />
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="info">
+                    <div>平均内存占用</div>
+                    <div class="data">23121MB</div>
+                  </div>
+                </div>
+              </div>
+              <div class="data-item left">
+                <div class="left">
+                  <div class="icon">
+                    <img src="../assets/down.png" />
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="info">
+                    <div>平均内存占用</div>
+                    <div class="data">23121MB</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </el-dialog>
   </div>
 </body>
 
@@ -229,10 +314,15 @@
 <script src="../node_modules/jquery/dist/jquery.min.js"></script>
 <script src="../node_modules/swiper/dist/js/swiper.min.js"></script>
 <script>
-  new Vue({
+  var app = new Vue({
     el: '#app',
     data: function () {
-      return { visible: false }
+      return { showDialog: false }
+    },
+    methods:{
+      handleClose(){
+        this.showDialog = false
+      }
     }
   })
   var swiper = new Swiper(".swiper-container", {
@@ -249,7 +339,7 @@
     initialSlide: Math.floor(10 / 2), // 10是图片的数量
     on: {
       click: function () {
-        console.log(arguments, 'arguments')
+        app.showDialog = true
       }
     }
   })
