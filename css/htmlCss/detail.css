@@ -30,6 +30,7 @@
 
 .detail .header {
   position: relative;
+  padding: 0 40px;
 }
 
 .detail .header .back {
@@ -53,6 +54,10 @@
   background-size: cover;
   margin-top: -20px;
   cursor: pointer;
+}
+
+.detail .cont .img-box .has-que {
+  color: #f00;
 }
 
 .detail .cont .img-box .img-border {

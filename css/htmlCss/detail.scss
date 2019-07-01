@@ -30,6 +30,7 @@ $color: #409eff;
 .detail {
   .header {
     position: relative;
+    padding:0 40px;
     .back {
       position: absolute;
       left:-20px;
@@ -53,6 +54,9 @@ $color: #409eff;
       }
     }
     .img-box {
+      .has-que{
+        color: #f00;
+      }
       .img-border {
         padding:3px 3px 2px;
         &.active {
