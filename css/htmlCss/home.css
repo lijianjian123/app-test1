@@ -1,0 +1,151 @@
+.home {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size:14px;
+}
+.home .header {
+    height:60px;
+    line-height: 60px;
+}
+
+.home .content .content-header .cont {
+    height:400px;
+    color:#fff;
+    background: url(../../assets/home/banner.jpg) no-repeat top left / 100% 100%;
+}
+.home .content .content-header .cont div:nth-child(1) {
+    padding-top:130px;
+    padding-bottom:20px;
+    text-align: center;
+    font-size:36px;
+    font-weight: bold;
+}
+.home .content .content-header .cont div:nth-child(2) {
+     height:60px;
+     line-height: 60px;
+     text-align: center;
+     font-size:16px;
+}
+.home .content .content-header .cont div:nth-child(3) {
+    height:70px;
+    line-height: 70px;
+    text-align: center;
+}
+.home .content .content-header .cont div:nth-child(3) a {
+    margin:0 20px;
+}
+
+.home .content-body {
+    padding:50px 40px;
+    color:#7F7F7F;
+    font-size:16px;
+    line-height:24px;
+}
+
+.home .content-body h3, .home .content-body h2 {
+    color:#333;
+    font-size:20px;
+}
+
+.home .product-intro .bottom,.home .advantage .bottom{
+    padding-top:30px;
+}
+
+.home .content-body .img-box {
+    width:80%;
+    border-radius: 5px;
+    box-shadow: 0 2px 50px #888;
+    margin:0 auto;
+    overflow: hidden;
+    padding:0;
+}
+.home .content-body img {
+    display: block;
+    width:70%;
+    border-radius: 5px;
+    box-shadow: 0 2px 50px #888;
+    margin:0 auto;
+}
+
+.home .product-intro .icon {
+    width:70px;
+    height:70px;
+    color:#409eff;
+}
+
+.home .product-intro .features {
+    margin-top:70px;
+}
+.home .product-intro .features .icon {
+    margin:0 auto;
+}
+.home .product-intro .features h5 {
+    color:#333;
+    text-align: center;
+    margin:0;
+    line-height:40px;
+}
+
+.home .advantage h2 {
+    font-size:36px;
+    line-height:80px;
+    text-align: center;
+    padding-top:50px;
+}
+
+.home .advantage h3 {
+    margin-top:40px;
+}
+
+.home .advantage .adv_1, .home .advantage .adv_2 {
+    padding-bottom:160px;
+}
+
+.home .advantage .hover-animate {
+    border:1px solid #409eff;
+    color:#409eff;
+    font-size: 14px;
+}
+
+.home .advantage .hover-animate:hover {
+    background: #409eff;
+    color:#fff;
+}
+
+.home .advantage .hover-animate:hover .icon {
+    opacity:1;
+    margin-right:10px;
+}
+
+
+
+
+
+
+
+
+
+.home .hover-animate {
+    display: inline-block;
+    width:140px;
+    height:40px;
+    line-height:38px;
+    border:1px solid #fff;
+    background:transparent;
+    border-radius: 40px;
+    color:#fff;
+    text-align: left;
+    font-weight: bold;
+}
+.home .hover-animate .icon{
+    opacity: 0;
+    margin-left:25px;
+    transition: all 0.1s linear 0s;
+}
+.home .hover-animate:hover {
+    background: #fff;
+    color:#333;
+ }
+.home .hover-animate:hover .icon {
+    opacity:1;
+    margin-right:10px;
+}

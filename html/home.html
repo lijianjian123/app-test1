@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="../node_modules/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/htmlCss/home.css">
+</head>
+<body>
+<div class="home" id="app">
+   <el-row class="header">
+        <el-col :span="8">
+            logo
+        </el-col>
+        <el-col :span="16">
+            <div class="right">
+                <span>首页</span>
+                <span>产品</span>
+                <span>帮助中心</span>
+                <span>Blog</span>
+            </div>
+        </el-col>
+   </el-row>
+   <el-row class="content">
+       <el-row class="content-header">
+           <el-col>
+               <div class="cont">
+                   <div>AI智能测试，始终快人一步</div>
+                   <div>全过程解决方案，灵活选择，按需购买</div>
+                   <div>
+                       <a class="btn hover-animate">
+                           <svg class="icon" aria-hidden="true">
+                               <use xlink:href="#icon-jiantou"></use>
+                           </svg>
+                           了解报价
+                       </a>
+                       <a class="btn hover-animate">
+                           <svg class="icon" aria-hidden="true">
+                               <use xlink:href="#icon-jiantou"></use>
+                           </svg>
+                           产品介绍
+                       </a>
+                   </div>
+               </div>
+           </el-col>
+       </el-row>
+       <el-row class="content-body">
+           <el-row class="product-intro">
+               <el-row :gutter="60">
+                   <el-col :span="12">
+                       <h3>AI智能测试是</h3>
+                       <div class="top">
+                           基于深度学习和NLP语义解析两大技术，实现文本即执行脚本的能力，区别于传统控件查找执行方式，在交互逻辑一致的前提下，真正意义上实现跨平台、跨系统执行脚本的能力。
+                       </div>
+                       <div class="bottom">
+                           通过深度学习产生的意外场景处理接口、icon图标库接口、NLP语义解析、OCR解析、以图找图五大基础接口，保障脚本在执行时的健壮性及遍历性。
+                       </div>
+                   </el-col>
+                   <el-col :span="12">
+                       <img src="../assets/home/AItest.jpg" alt="">
+                   </el-col>
+               </el-row>
+               <el-row class="features" :gutter="80">
+                   <el-col :span="6">
+                       <div class="icon">
+                           <svg class="icon" aria-hidden="true">
+                               <use xlink:href="#icon-shouye-menjiandi"></use>
+                           </svg>
+                       </div>
+                       <h5>使用门槛低</h5>
+                       <div>
+                           文字即执行脚本，只要测试者能书写测试用例，就可以掌握AI智能测试能力，快速进入AI自动化测试时代。
+                       </div>
+                   </el-col>
+                   <el-col :span="6">
+                       <div class="icon">
+                           <svg class="icon" aria-hidden="true">
+                               <use xlink:href="#icon-zhouqiduan"></use>
+                           </svg>
+                       </div>
+                       <h5>测试周期短</h5>
+                       <div>
+                           完成脚本编写后，即可7x24小时进行脚本执行，全年无休。脚本可用于功能测试、兼容测试、压力测试等。
+                       </div>
+                   </el-col>
+                   <el-col :span="6">
+                       <div class="icon">
+                           <svg class="icon" aria-hidden="true">
+                               <use xlink:href="#icon-ts-tubiao_transactionserver"></use>
+                           </svg>
+                       </div>
+                       <h5>脚本维护成本低</h5>
+                       <div>
+                           区别于原有控件查找方式，在多平台交互流程相同的情况下，测试者只需要维护1套脚本，大大降低维护成本。
+                       </div>
+                   </el-col>
+                   <el-col :span="6">
+                       <div class="icon">
+                           <svg class="icon" aria-hidden="true">
+                               <use xlink:href="#icon-wending"></use>
+                           </svg>
+                       </div>
+                       <h5>脚本健壮性强</h5>
+                       <div>
+                           意外场景处理接口将执行过程中出现的非既定流程内出现的事件，自动进行干预，最大程度保障脚本健壮性
+                       </div>
+                   </el-col>
+               </el-row>
+           </el-row>
+           <el-row class="advantage">
+               <el-row>
+                   <h2>我们的优势</h2>
+               </el-row>
+               <el-row>
+                   <el-row class="adv_1" :gutter="60">
+                       <el-col :span="12">
+                           <h3>经过百万级数据训练的AI服务</h3>
+                           <div class="top">
+                               Icon库、NLP语义解析、意外场景处理、OCR解析、以图找图五大接口均通过AI深度学习模型灌输上百万经过标注的数据进行学习，目前各个接口均已具备可商用化能力。节省AI从0-1的数据采集及标注成本
+                           </div>
+                           <div class="bottom">
+                               <a class="btn hover-animate">
+                                   <svg class="icon" aria-hidden="true">
+                                       <use xlink:href="#icon-jiantou-copy"></use>
+                                   </svg>
+                                   联系我们
+                               </a>
+                           </div>
+                       </el-col>
+                       <el-col :span="12">
+                           <img src="../assets/home/AIservice.jpg" alt="">
+                       </el-col>
+                   </el-row>
+                   <el-row class="adv_2" :gutter="60">
+                       <el-col :span="12">
+                           <img src="../assets/home/solution.jpg" alt="">
+                       </el-col>
+                       <el-col :span="12">
+                           <h3>全过程AI智能测试解决方案</h3>
+                           <div class="top">
+                               我们拥有从脚本录制工具、提测、执行、报告展示、历史数据分析等全过AI智能测试解决方案
+                           </div>
+                           <div class="bottom">
+                               <a class="btn hover-animate">
+                                   <svg class="icon" aria-hidden="true">
+                                       <use xlink:href="#icon-jiantou-copy"></use>
+                                   </svg>
+                                   产品介绍
+                               </a>
+                           </div>
+                       </el-col>
+                   </el-row>
+                   <el-row class="adv_3" :gutter="60">
+                       <el-col :span="12">
+                           <h3>按需购买灵活方便</h3>
+                           <div class="top">
+                               所有产品和接口服务均可以根据自身需求单独购买，支持私有化部署。
+                           </div>
+                           <div class="bottom">
+                               <a class="btn hover-animate">
+                                   <svg class="icon" aria-hidden="true">
+                                       <use xlink:href="#icon-jiantou-copy"></use>
+                                   </svg>
+                                   查看报价
+                               </a>
+                           </div>
+                       </el-col>
+                       <el-col :span="12">
+                           <img src="../assets/home/buy.jpg" alt="">
+                       </el-col>
+                   </el-row>
+               </el-row>
+           </el-row>
+           <el-row class="who-use">
+
+           </el-row>
+           <el-row class="logs">
+
+           </el-row>
+       </el-row>
+       <el-row class="contact-us">
+
+       </el-row>
+   </el-row>
+</div>
+</body>
+</html>
+<script src="../node_modules/vue/dist/vue.min.js"></script>
+<script src="../iconfont/iconfont.js"></script>
+<script src="../node_modules/element-ui/lib/index.js"></script>
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: function() {
+            return { visible: false }
+        }
+    })
+</script>
