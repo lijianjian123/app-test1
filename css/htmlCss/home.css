@@ -5,6 +5,25 @@
 .home .header {
     height:60px;
     line-height: 60px;
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index: 1;
+    background: #fff;
+    border-bottom:1px solid #ededed!important;
+}
+
+.home .header .nav {
+    font-weight: 500;
+    font-size: 16px;
+    padding-right:10px;
+}
+.home .header .nav span {
+    display: inline-block;
+    padding:0 10px;
+}
+.home .content {
+    padding-top:60px;
 }
 
 .home .content .content-header .cont {
@@ -13,7 +32,7 @@
     background: url(../../assets/home/banner.jpg) no-repeat top left / 100% 100%;
 }
 .home .content .content-header .cont div:nth-child(1) {
-    padding-top:130px;
+    padding-top:100px;
     padding-bottom:20px;
     text-align: center;
     font-size:36px;
@@ -85,8 +104,8 @@
     line-height:40px;
 }
 
-.home .advantage h2 {
-    font-size:36px;
+.home .advantage h2, .home .who-use h2,.home .logs h2{
+    font-size:30px;
     line-height:80px;
     text-align: center;
     padding-top:50px;
@@ -114,6 +133,13 @@
 .home .advantage .hover-animate:hover .icon {
     opacity:1;
     margin-right:10px;
+}
+
+.home .who-use .who-use-icon img {
+    width:100%;
+    max-width:200px;
+    height:auto;
+    box-shadow: none;
 }
 
 
@@ -148,4 +174,138 @@
 .home .hover-animate:hover .icon {
     opacity:1;
     margin-right:10px;
+}
+
+.home .logs .log-icon {
+    width:70px;
+    height:70px;
+    float:left;
+}
+.home .logs .log-icon svg {
+    width:100%;
+    height:100%;
+}
+
+.home .logs .log-info h5 {
+    margin:0;
+    line-height:30px;
+    font-size:20px;
+    padding-bottom:5px;
+    color:#333;
+}
+.home .logs .log-info h5 svg {
+    width:30px;
+    height:30px;
+    vertical-align: middle;
+}
+.home .logs .log-info a{
+    font-size:12px;
+    color:#409eff;
+}
+
+.home .logs .log-info .log-info-cont {
+    height:150px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;;
+}
+
+.home .question {
+    height:60px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.home .question .que_icon {
+    width:60px;
+    height:100%;
+    background:lightseagreen;
+}
+.home .question .que_go {
+    width:30px;
+    height:100%;
+    line-height: 58px;
+    text-align: center;
+    border:1px solid #ccc;
+    border-radius:0 5px 5px 0;
+    border-left:none;
+}
+.home .question .que_go svg:nth-child(2) {
+    display: none;
+}
+.home .question .que_go svg:nth-child(1) {
+    display: inline-block;
+}
+
+.home .question .que_cont {
+    height:100%;
+    padding:0 50px 0 70px;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+}
+
+.home .question .que_cont .que_small {
+    font-size:12px;
+    color:#333;
+    line-height:14px;
+    padding-top:10px;
+}
+
+
+.home .question .que_cont .que_title {
+    font-size: 16px;
+    font-weight: 500;
+    color:#333;
+}
+
+.home .question:hover .que_title {
+    color:#409eff;
+}
+.home .question:hover .que_go {
+    background:#409eff;
+    border:none;
+    line-height:60px;
+}
+.home .question:hover .que_go svg:nth-child(2) {
+    display: inline-block;
+}
+.home .question:hover .que_go svg:nth-child(1){
+    display: none;
+}
+
+.home .contact-us {
+    height:600px;
+    background: #d9d3cd url(../../assets/home/contact-us.jpg) no-repeat top right / cover;
+}
+
+.home .contact {
+    width:500px;
+    margin:0 auto;
+    text-align: center;
+    /*-webkit-filter: blur(2px); !* Chrome, Safari, Opera *!*/
+    /*filter: blur(2px);*/
+}
+.home .contact h2 {
+    padding-top:80px;
+    line-height:50px;
+    margin:0;
+    color:#fff;
+    font-size:28px;
+}
+.home .contact .tips {
+    color:#fff;
+    font-size:16px;
+}
+.home .contact .demo-ruleForm {
+    padding-top:30px;
+    width:350px;
+    margin:0 auto;
+}
+.home .contact .demo-ruleForm .submit-btn {
+    width:100%;
+    background: #409eff;
 }
