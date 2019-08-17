@@ -1,6 +1,7 @@
 .home {
     font-family: "Helvetica Neue", Arial, sans-serif;
     font-size:14px;
+    min-width: 750px;
 }
 .home .header {
     height:60px;
@@ -15,7 +16,7 @@
 
 .home .header .nav {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     padding-right:10px;
 }
 .home .header .nav span {
@@ -251,13 +252,13 @@
 .home .question .que_cont .que_small {
     font-size:12px;
     color:#333;
-    line-height:14px;
-    padding-top:10px;
+    line-height:12px;
+    padding-top:5px;
 }
 
 
 .home .question .que_cont .que_title {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     color:#333;
 }
