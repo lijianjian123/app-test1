@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="../../node_modules/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="../../css/element-%23409EFF/index.css">
+    <link rel="stylesheet" href="../../node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/htmlCss/home/home.css">
+    <link rel="stylesheet" href="../../css/htmlCss/home/AI_server.css">
+</head>
+<body>
+<div class="home AI_server" id="app">
+    <el-row class="header">
+        <el-col :span="8">
+            <div class="logo">
+                logo
+            </div>
+        </el-col>
+        <el-col :span="16">
+            <div class="right nav">
+                <el-menu :default-active="activeIndex" text-color="#333" active-text-color="#409eff" class="el-nav" mode="horizontal">
+                    <el-menu-item index="1"><a href="home.html">首页</a></el-menu-item>
+                    <el-submenu index="2">
+                        <template slot="title">产品</template>
+                        <el-menu-item index="2-1"><a href="AI_server.html">AI服务</a></el-menu-item>
+                        <el-menu-item index="2-2"><a href="AI_test.html">AI智能测试</a></el-menu-item>
+                    </el-submenu>
+                    <el-menu-item index="3"><a href="#">帮助中心</a></el-menu-item>
+                    <el-menu-item index="4"><a href="#">Blog</a></el-menu-item>
+                </el-menu>
+            </div>
+        </el-col>
+    </el-row>
+    <el-row class="content">
+        <el-row class="content-header">
+            <el-col>
+                <div class="cont">
+                    <div class="cont_shadow">
+                        <div>AI服务，让测试更懂你</div>
+                        <div>百万次数据训练，只为给你提供最好服务</div>
+                        <div>
+                            <a class="btn hover-animate" href="#price">
+                                <svg class="icon" aria-hidden="true">
+                                    <use xlink:href="#icon-jiantou"></use>
+                                </svg>
+                                了解报价
+                            </a>
+                            <a class="btn hover-animate hover-animate-light" href="#contactUs">
+                                <svg class="icon" aria-hidden="true">
+                                    <use xlink:href="#icon-jiantou-copy"></use>
+                                </svg>
+                                联系我们
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </el-col>
+        </el-row>
+        <el-row class="content-body">
+            <el-row class="advantage">
+                <el-row>
+                    <el-row class="adv_1" :gutter="60">
+                        <el-col :span="12">
+                            <h3>Icon库</h3>
+                            <div class="top">
+                                目前Icon已通过深度学习，识别50大类图标，可以完美解决在界面上没有可识别文字的情况下，根据测试者语义完成正确操作动作。
+                            </div>
+                            <div class="bottom">
+                                <a class="btn hover-animate" href="#contactUs">
+                                    <svg class="icon" aria-hidden="true">
+                                        <use xlink:href="#icon-jiantou-copy"></use>
+                                    </svg>
+                                    联系我们
+                                </a>
+                            </div>
+                        </el-col>
+                        <el-col :span="12">
+                            <img src="../../assets/home/AIserver_icon.jpg" alt="">
+                        </el-col>
+                    </el-row>
+                    <el-row class="adv_2" :gutter="60">
+                        <el-col :span="12">
+                            <img src="../../assets/home/AIserver_NLP.jpg" alt="">
+                        </el-col>
+                        <el-col :span="12">
+                            <h3>NLP语义解析</h3>
+                            <div class="top">
+                                我们拥有一套成熟的语法和语义标准，经过数千款app的测试验证，已经适用于绝大多数测试场景。
+                            </div>
+                            <div class="bottom">
+                                <a class="btn hover-animate" href="#contactUs">
+                                    <svg class="icon" aria-hidden="true">
+                                        <use xlink:href="#icon-jiantou-copy"></use>
+                                    </svg>
+                                    联系我们
+                                </a>
+                            </div>
+                        </el-col>
+                    </el-row>
+                    <el-row class="adv_3" :gutter="60">
+                        <el-col :span="12">
+                            <h3>OCR</h3>
+                            <div class="top">
+                                目前对横排版、竖排版、行切分、字切分、图像中文字识别的差错率以达到万分之三。
+                            </div>
+                            <div class="bottom">
+                                <a class="btn hover-animate" href="#contactUs">
+                                    <svg class="icon" aria-hidden="true">
+                                        <use xlink:href="#icon-jiantou-copy"></use>
+                                    </svg>
+                                    联系我们
+                                </a>
+                            </div>
+                        </el-col>
+                        <el-col :span="12">
+                            <img src="../../assets/home/AIserver_OCR.jpg" alt="">
+                        </el-col>
+                    </el-row>
+                    <el-row class="adv_4" :gutter="60">
+                        <el-col :span="12">
+                            <img src="../../assets/home/AIserver_find.jpg" alt="">
+                        </el-col>
+                        <el-col :span="12">
+                            <h3>以图找图</h3>
+                            <div class="top">
+                                复杂图形精准定位，一处标注，跨分辨率跨平台处处识别，精度高识别速度快。
+                            </div>
+                            <div class="bottom">
+                                <a class="btn hover-animate" href="#contactUs">
+                                    <svg class="icon" aria-hidden="true">
+                                        <use xlink:href="#icon-jiantou-copy"></use>
+                                    </svg>
+                                    联系我们
+                                </a>
+                            </div>
+                        </el-col>
+                    </el-row>
+                </el-row>
+            </el-row>
+            <el-row class="price" id="price">
+                <el-row>
+                    <h2>产品报价</h2>
+                </el-row>
+                <el-row>
+                    <div>
+                        <img src="../../assets/home/AIserver_NLP.jpg" alt="">
+                    </div>
+                    <div class="tips">除以上套餐外，您可以联系我们自定义内容规格，我们回根据具体规格给您提供报价方案。</div>
+                </el-row>
+            </el-row>
+        </el-row>
+        <el-row id="contactUs" class="contact-us">
+            <div class="contact">
+                <h2>联系我们</h2>
+                <div class="tips">如果您对我们产品感兴趣，请留下您的联系方式</div>
+                <el-form :model="formData" :rules="rules" ref="ruleForm"                                 class="demo-ruleForm">
+                    <el-form-item prop="name">
+                        <el-input placeholder="姓名" v-model="formData.name"></el-input>
+                    </el-form-item>
+                    <el-form-item prop="phone">
+                        <el-input placeholder="电话" v-model="formData.phone"></el-input>
+                    </el-form-item>
+                    <el-form-item prop="question">
+                        <el-input :rows="5" resize="none" placeholder="咨询内容" type="textarea" v-model="formData.question"></el-input>
+                    </el-form-item>
+                    <el-button round class="submit-btn" type="primary" :loading="isSubmit" @click="submit">提交</el-button>
+                </el-form>
+            </div>
+        </el-row>
+    </el-row>
+</div>
+</body>
+</html>
+<script src="../../node_modules/vue/dist/vue.min.js"></script>
+<script src="../../node_modules/element-ui/lib/index.js"></script>
+<script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../../iconfont/iconfont.js?t=20190817"></script>
+<script id="myScript">
+    var validatePhone = function (rule, value, callback) {
+        if(!/^1[3456789]\d{9}$/.test(value)){
+            callback('请输入正确的电话号码')
+        }
+        callback()
+    };
+    new Vue({
+        el: '#app',
+        data: function() {
+            return {
+                visible: false,
+                formData:{
+                    name:'',
+                    phone:'',
+                    question:''
+                },
+                rules:{
+                    name: [
+                        { required: true, message: '请输入姓名', trigger: 'blur' }
+                    ],
+                    phone: [
+                        { required: true, message: '请输入电话号码', trigger: 'blur'},
+                        { validator: validatePhone, trigger: 'blur' }
+                    ]
+                },
+                isSubmit:false,
+                activeIndex:'2-1'
+            }
+        },
+        methods:{
+            submit(){
+                if(this.isSubmit){return false}
+                this.$refs['ruleForm'].validate((valid) => {
+                    if (valid) {
+                        //this.formData是需要提交的数据,在这里处理请求,待结果返回后把this.isSubmit设置成false,防止用户快速点击
+                    } else {
+                        console.log('error submit!!');
+                        return false;
+                    }
+                });
+
+            }
+        }
+    })
+</script>

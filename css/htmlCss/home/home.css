@@ -14,10 +14,21 @@
     border-bottom:1px solid #ededed!important;
 }
 
+.home .header .logo {
+    padding-left:20px;
+    font-weight: 500;
+}
+
 .home .header .nav {
     font-weight: 500;
     font-size: 14px;
     padding-right:10px;
+    overflow: hidden;
+}
+.home .header .nav .el-nav{
+    height:58px;
+    overflow: hidden;
+    border-bottom: none;
 }
 .home .header .nav span {
     display: inline-block;
@@ -28,12 +39,12 @@
 }
 
 .home .content .content-header .cont {
-    height:400px;
+    height:600px;
     color:#fff;
-    background: url(../../assets/home/banner.jpg) no-repeat top left / 100% 100%;
+    background: url(../../../assets/home/banner.jpg) no-repeat top left / 100% 100%;
 }
 .home .content .content-header .cont div:nth-child(1) {
-    padding-top:100px;
+    padding-top:180px;
     padding-bottom:20px;
     text-align: center;
     font-size:36px;
@@ -126,6 +137,20 @@
     font-size: 14px;
 }
 
+.home .hover-animate.hover-animate-light {
+    border:none;
+    background:#409eff;
+}
+
+.home .hover-animate.hover-animate-light:hover {
+    background:#409eff;
+    color:#fff;
+}
+
+.home .advantage .adv_3 .bottom .hover-animate:nth-child(1){
+    margin-right: 20px;
+}
+
 .home .advantage .hover-animate:hover {
     background: #409eff;
     color:#fff;
@@ -142,14 +167,6 @@
     height:auto;
     box-shadow: none;
 }
-
-
-
-
-
-
-
-
 
 .home .hover-animate {
     display: inline-block;
@@ -280,7 +297,7 @@
 
 .home .contact-us {
     height:600px;
-    background: #d9d3cd url(../../assets/home/contact-us.jpg) no-repeat top right / cover;
+    background: #d9d3cd url(../../../assets/home/contact-us.jpg) no-repeat top right / cover;
 }
 
 .home .contact {
@@ -308,5 +325,4 @@
 }
 .home .contact .demo-ruleForm .submit-btn {
     width:100%;
-    background: #409eff;
 }

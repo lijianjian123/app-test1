@@ -1,0 +1,27 @@
+.home.AI_server.AI_test .content .content-header .cont{
+    background: url(../../../assets/home/AItest_banner.jpg) no-repeat top left / 100% 100%;
+}
+
+.AI_server .advantage .adv_3 {
+    padding-bottom:160px;
+}
+
+.AI_server .price h2 {
+    font-size:30px;
+    line-height:80px;
+    text-align: center;
+    padding-top:50px;
+}
+
+.AI_server .price img {
+    border:1px solid #ccc;
+    box-shadow: none;
+    width:100%;
+    max-height:200px;
+}
+
+.AI_server .price .tips {
+    font-size:12px;
+    color:#409eff;
+    padding-top:10px;
+}
